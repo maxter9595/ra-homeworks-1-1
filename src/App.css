@@ -26,7 +26,7 @@
   height: 60vh;
   min-height: 625px;  
   position: relative;
-  background-image: url('./src/assets/coat.png');
+  background-image: url('/src/assets/coat.png');
   background-size: cover;
   background-position: top center;
   box-shadow: 0 10px 30px rgba(0,0,0,0.2);
