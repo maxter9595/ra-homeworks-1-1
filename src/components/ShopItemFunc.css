@@ -1,0 +1,135 @@
+.main-content {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: #333;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.main-content h2 {
+  font-size: clamp(16px, 2vw, 18px);
+  font-weight: 400;
+  margin: 0 0 15px;
+  color: #666;
+  letter-spacing: 1px;
+}
+
+.main-content h1 {
+  font-size: clamp(24px, 3vw, 32px);
+  font-weight: 300;
+  margin: 0 0 20px;
+  letter-spacing: 2px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.main-content h3 {
+  font-size: clamp(12px, 1.8vw, 14px);
+  font-weight: 500;
+  margin: 0 0 25px;
+  letter-spacing: 1.5px;
+  color: #888;
+  text-transform: uppercase;
+}
+
+.main-content .description {
+  font-size: clamp(14px, 1.8vw, 15px);
+  line-height: 1.7;
+  margin-bottom: 30px;
+  color: #555;
+  white-space: pre-line;
+  word-break: break-word;
+  hyphens: auto;
+}
+
+.highlight-window.mobile {
+  display: none;
+  height: 40vh;
+  min-height: 250px;
+  margin: 0 -20px 25px;
+  position: relative;
+  background-image: url('./src/assets/coat.png');
+  background-size: cover;
+  background-position: top center;
+}
+
+.divider {
+  height: 1px;
+  background-color: #eee;
+  margin: 25px 0;
+  width: 100%;
+}
+
+.purchase-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.price {
+  font-size: clamp(20px, 2.5vw, 24px);
+  font-weight: 500;
+  color: #000;
+}
+
+button {
+  background-color: #000000c4;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: clamp(12px, 1.5vw, 14px);
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex-grow: 1;
+  text-align: center;
+  max-width: fit-content;
+}
+
+button:hover {
+  background-color: #333;
+}
+
+@media (max-width: 992px) {
+  .main-content {
+    padding: 15px;
+    margin-top: 120px;
+  }
+  
+  .divider {
+      margin: 22px 0;
+  }
+  
+  .highlight-window.mobile {
+    display: block;
+  }
+  
+  button {
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .main-content {
+    padding: 10px;
+  }
+  
+  .purchase-info {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .divider {
+      margin: 10px 0;
+  }
+
+  button {
+    width: 100%;
+  }
+}
